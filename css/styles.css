@@ -90,8 +90,9 @@ address {
 }
 
 .hero-btn {
-    display: inline-block;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
    
     min-width: 200px;
     padding: 10px 32px;
@@ -682,6 +683,42 @@ address {
     text-transform: uppercase;
 
     color: var(--tertiary-color)
+}
+
+.subscribe-footer {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 93px;
+}
+
+.subscribe-input {
+    display: block;
+    padding-left: 16px;
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.subscribe-title {   
+    display: block;
+    
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--tertiary-color);
+}
+
+.subscribe-icon {
+    margin-left: 10px;
 }
 
 .backdrop {
