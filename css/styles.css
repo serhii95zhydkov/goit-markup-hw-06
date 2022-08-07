@@ -884,7 +884,7 @@ address {
     color: var(--secondary-color);
 }
 
-.modal-checkbox-lable {
+/* .modal-checkbox-lable {
     display: flex;
     align-items: center;
 
@@ -917,6 +917,51 @@ address {
 }
 
 .modal-checkbox-input:focus + .modal-checkbox-lable::before {
+    outline: transparent;
+} */
+
+.modal-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.lable-checkbox {
+    display: flex;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-color);
+}
+
+.icon-check-box {
+    display: flex;
+    align-items: center;
+}
+
+.icon-check {
+    width: 16px;
+    height: 15px;
+
+    margin-right: 7px;
+
+    fill: currentColor;
+
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.checkbox:checked+label .icon-check {
+
+    background-color: var(--accent-color);
+    border: transparent;
+}
+
+.checkbox:focus+label .icon-check {
     outline: transparent;
 }
 
