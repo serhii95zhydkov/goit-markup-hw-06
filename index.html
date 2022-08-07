@@ -427,10 +427,22 @@
           <textarea class="modal-textarea" name="comment" placeholder="Введіть текст"></textarea>
           <span class="title-textarea">Коментар</span>
         </label>
-        <input id="user-policy" type="checkbox" class="modal-checkbox-input visually-hidden" name="contract" value="accept">
+        <!-- <input id="user-policy" type="checkbox" class="modal-checkbox-input visually-hidden" name="contract" value="accept">
         <label for="user-policy" class="modal-checkbox-lable">
           Погоджуюся з розсилкою та приймаю&thinsp;<a href="/">Умови договору</a>
-        </label>
+        </label> -->
+        <div class="modal-checkbox">
+          <input type="checkbox" name="accept" value="accept" id="checkbox" class="checkbox visually-hidden" />
+          <label for="checkbox" class="lable-checkbox">
+            <span class="icon-check-box">
+              <svg class="icon-check">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            Погоджуюся з розсилкою та приймаю &thinsp;
+            <a href="/">Умови договору</a>
+          </label>
+        </div>
         <button class="hero-btn" type="submit">Відправити</button>
         <button class="modal-close-button" type="button" data-modal-close>
           <svg width="11" height="11">
