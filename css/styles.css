@@ -758,7 +758,6 @@ address {
     top: 50%;
     left: 50%;
     width: 528px;
-    height: 581px;
     
     background-color: var(--tertiary-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -778,11 +777,13 @@ address {
     width: 100%;
 
     margin-top: 12px;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
+
 }
 
 .modal-title {
-    
+    display: block;
+
     margin-bottom: 12px;
 
     font-weight: 700;
@@ -901,6 +902,7 @@ address {
     width: 16px;
     height: 15px;
     border: 2px solid var(--primary-color);
+    border-radius: 1px;
     content: '';
     cursor: pointer;
     margin-right: 10px;
