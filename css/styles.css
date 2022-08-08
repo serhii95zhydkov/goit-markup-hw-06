@@ -665,6 +665,10 @@ address {
     align-items: baseline;
 }
 
+.nav-footer-container {
+    flex-grow: 1;
+}
+
 .join-footer {
     margin-left: 70px;
 }
@@ -691,10 +695,13 @@ address {
     margin-left: 93px;
 }
 
+.subscribe-field {
+    margin-right: 12px;
+}
+
 .subscribe-input {
     display: block;
     padding-left: 16px;
-    margin-right: 12px;
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -774,11 +781,9 @@ address {
     display: flex;
     flex-direction: column;
 
+    margin-bottom: 10px;
+
     width: 100%;
-
-    margin-top: 12px;
-    margin-bottom: 20px;
-
 }
 
 .modal-title {
@@ -824,22 +829,13 @@ address {
 
     display: block;
 
-    margin-left: 14px;
-
     top: 50%;
-    left: 0;
+    left: 14px;
 
-    transform: translate(0, -50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-lable {
-    display: inline-block;
-    position: absolute;
-    
-    top: -50%;
-    left: 0;
-
     margin-bottom: 4px;
 
     font-size: 12px;
@@ -856,6 +852,8 @@ address {
 }
 
 .modal-textarea {
+    resize: none;
+    
     height: 120px;
     padding: 12px 16px;
 
@@ -863,6 +861,12 @@ address {
     border-radius: 4px;
 
     outline: none;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-textarea:focus {
+    border: 1px solid var(--accent-color);
 }
 
 .modal-textarea::placeholder {
@@ -883,42 +887,6 @@ address {
     letter-spacing: 0.01em;
     color: var(--secondary-color);
 }
-
-/* .modal-checkbox-lable {
-    display: flex;
-    align-items: center;
-
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--secondary-color);
-
-
-    margin-bottom: 30px;
-}
-
-.modal-checkbox-lable::before {
-    display: block;
-    width: 16px;
-    height: 15px;
-    border: 2px solid var(--primary-color);
-    border-radius: 2px;
-    content: '';
-    cursor: pointer;
-    margin-right: 7px;
-}
-
-.modal-checkbox-input:checked + .modal-checkbox-lable::before {
-    border-color: var(--accent-color);
-    background-color: var(--accent-color);
-    background-image: url(../images/check.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.modal-checkbox-input:focus + .modal-checkbox-lable::before {
-    outline: transparent;
-} */
 
 .modal-checkbox {
     display: flex;
@@ -941,11 +909,11 @@ address {
 .icon-check-box {
     display: flex;
     align-items: center;
+
+    margin-right: 7px;
 }
 
 .icon-check {
-    
-    margin-right: 7px;
 
     fill: currentColor;
 
